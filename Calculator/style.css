@@ -1,0 +1,65 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    color: blueviolet;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: relative; 
+    left: 560px;
+    border-radius: 15px;
+    width: 350px;
+    height: 500px;;
+  }
+  
+  #output {
+    width: 46vh;
+    padding: 15px;
+    font-size: 18px;
+    text-align: right; 
+    height: 30px; 
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    background-color: lightblue;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 2px;
+    gap: 15px;
+  }
+  
+  .row button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    background-color: darkred;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .row button:hover {
+    background-color: crimson;
+    transform: scale(1.1);
+  }
+  
+  .row button:active {
+    transform: scale(1); /* Button pressed effect */
+    background-color: maroon; 
+  }
+  
+  
