@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000; /* Set background color to black */
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Ensure the header is fully black */
+    border-bottom: 2px solid #333; /* Slight border to separate the header */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.billi {
+    color: orange;
+    font-family: 'Satisfy', sans-serif;
+    margin-right: 15px;
+    /* font-size: 52px; */
+}
+
+/* .four {
+    color: white;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 0 8px;
+} */
+
+.you {
+    color: limegreen;
+    font-size: 19px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.all-courses, .my-learning {
+    padding: 10px 15px;
+    margin-right: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: background-color 0.3s ease;
+}
+
+.all-courses:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover effect for all-courses */
+}
+
+.my-learning {
+    background-color: limegreen; /* Green background for My Learning */
+    color: #000; /* Black text color */
+    border: none;
+}
+
+.my-learning:hover {
+    background-color: #32cd32; /* Darker hover effect for My Learning */
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.menu-bar {
+    width: 30px;
+    height: 2px;
+    /* background-color: #fff; */
+    /* margin-top: 5px; */
+    /* margin-right: 10px; */
+    /* position: relative; */
+}
+
+/* .menu-bar::before, .menu-bar::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+} */
+
+/* .menu-bar::before {
+    top: -8px;
+}
+
+.menu-bar::after {
+    top: 8px;
+} */
+
+.course-section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #111; /* Dark background for the course section */
+    border: 2px solid #333; /* Slight border around the course section */
+}
+
+.course-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.course-section p {
+    font-size: 18px;
+    color: lightgray;
+}
+
+/* Style for the three dots */
+.three-dots {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 19px;
+    right: 20px;
+}
+
+/* The sliding window */
+.slide-window {
+    width: 300px;
+    height: 100%;
+    background-color: #111;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hidden off-screen */
+    transition: right 0.5s ease;
+    padding: 20px;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Show the window when toggled */
+.slide-window.active {
+    right: 0;
+}
+
+/* Close button inside the sliding window */
+.close-btn {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Login form styling */
+.login-form {
+    margin-top: 50px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: limegreen;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-form button:hover {
+    background-color: darkgreen;
+}
